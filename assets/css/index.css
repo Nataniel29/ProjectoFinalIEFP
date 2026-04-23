@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo menu superio*/
+header div.menu-superior{
+    background-color: rgba(0, 0, 0, 0.79);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+header div.menu-superior .div-menus{
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    align-self: end;
+}
+header div.menu-superior .div-menus  ul{
+    list-style: none;
+    display: flex;
+    padding: .8%;
+}
+header div.menu-superior .div-menus ul li{
+    text-decoration: none;
+}
+header div.menu-superior .div-menus ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+}
+
+header div.menu-superior .div-menus ul li a:hover{
+    background-color: rgb(0, 0, 0,.9);
+    transition-duration: .8s;
+}
+/*Pesquisa*/
+.div-menus .pesquisa{
+    display: flex;
+    padding: .8%;
+    justify-content: center;
+}
+.div-menus img{
+    width: 20px;
+    color: #fff;
+}
+.div-menus p{
+    margin-left: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Estilo menu-principal */
+
+/*div-logo*/
+.div-logo img{
+}
+.div-logo img{
+    width: 100px;
+}
+/*Menu principal*/
+.menu-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    height: 8%;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    padding: 0px 15px;
+    top: 0px;
+    z-index: 9999999999;
+    box-shadow: 0 0 3px 0.1px  #cdc5c5;
+}
+.menu-principal .navbar{
+    display: flex;
+    align-items: center;
+}
+.menu-principal .navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu-principal .navbar ul li{
+    padding: 20px 0;
+}
+.menu-principal .navbar ul li a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+.menu-principal .navbar ul li a:hover{
+    color: rgb(235, 145, 35);
+    transition: all .5s;
+}
+.menu-direito{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-direito a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000;
+}
+.menu-direito a:hover{
+    color: rgb(235, 145, 35);
+    transition: all .4s;
+}
+.menu-direito img{
+    width: 25px;
+}
+.menu-direito p{
+    font-size: 15px;
+}
+
+
+/*Estilo conteudo principal*/
+.conteudo-principal .conteudo-1{
+    background-image: url('../img/GO.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilo conteudo-2*/
+
+.conteudo-2{
+    display: flex;
+    justify-content: center;
+}
+.conteudo-2 .conteudo-centrado{
+    margin-top: 100px;
+    padding-top: 30px;
+    border-top: .5px  solid #000;
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-wrap: ;
+}
+.conteudo-2 .lista-banners{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.conteudo-2 .lista-banners a{
+    position: relative;
+    margin: 1px;
+    width: 23%;
+    height: 100%;
+    border: 1px solid inherit;
+    border-radius: 10px 10px;
+    text-decoration: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: block; 
+    background-color: rgba(207, 207, 210, 0.1);
+}
+
+.conteudo-2 .lista-banners a img{
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+}
+.conteudo-2 .lista-banners a:hover img{
+    background-color: rgb(218, 199, 147,.4);
+    transition: transform .3s ease;
+    transform: scale(1.05);
+}
+.conteudo-2 .lista-banners a h3{
+    color: #000;
+    padding: 10px;
+}
+.conteudo-2 .lista-banners a p{
+    color: #000;
+    padding: 10px;
+}
+
+/*Estilo conteudo-3*/
+
+.conteudo-3{
+    display: flex;
+    justify-content: center;
+}
+.conteudo-3 .conteudo-centrado{
+    margin-top: 100px;
+    padding-top: 30px;
+    border-top: .5px  solid #000;
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.conteudo-3 .lista-banners{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.conteudo-3 .lista-banners .item-banner{
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px 1px #9d9a9a;
+    margin: 1px;
+    border-radius: 10px 10px;
+    background-color: rgba(207, 207, 210, 0.1);
+}
+
+.conteudo-3 .lista-banners .item-banner img{
+    display: flex;
+    border-radius: 10px 0px 0px 10px;
+}
+.conteudo-3 .lista-banners .item-banner div{
+    padding: 15px;
+    text-align: justify;
+}
+.conteudo-3 .lista-banners .item-banner div h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.conteudo-3 .lista-banners a p{
+    color: #000;
+    padding: 10px;
+}
